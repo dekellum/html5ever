@@ -15,14 +15,14 @@ publish = false
 path = "lib.rs"
 
 [dependencies]
-tendril = "0.4"
-html5ever = { version = "0.25", path = "../html5ever" }
-markup5ever = { version = "0.10", path = "../markup5ever" }
-xml5ever = { version = "0.16", path = "../xml5ever" }
+tendril       = { version=">=0.4.1,  <0.5" }
+markup5ever   = { version=">=0.10.0, <0.11" }
 
 [dev-dependencies]
-serde_json = "1.0"
-rustc-test = "0.3"
+xml5ever      = { version=">=0.16.1, <0.17" }
+html5ever     = { version=">=0.25.0, <0.26" }
+serde_json    = { version=">=1.0.38, <1.1" }
+rustc-test    = { version=">=0.3.0,  <0.4" }
 
 [[test]]
 name = "html-tokenizer"
